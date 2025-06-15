@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Aniverse</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+	<header>
+		<h1>Aniverse</h1>
+	</header>
+
+<div id ="menu">
+  	<!--  Create a category selection for anime or manga -->
+	<!--  Options for the catergory be changed by JavaScript if selected. -->
+<select id="category">
+	<option value="anime">Anime</option>
+	<option value="manga">Manga</option>
+  </select>
+
+  <!-- Create a type selection -->
+  <select id="media_type">
+    <option value="tv">TV</option>
+    <option value="ova">OVA</option>
+    <option value="movie">Movie</option>
+    <option value="special">Special</option>
+    <option value="ona">ONA</option>
+    <option value="music">Music</option>
+</select>
+  
+  <!-- Create an order_by selection -->
+  <select id="order_by">
+	<option value="title">Title</option>
+    <option value="start_date">Start Date</option>
+    <option value="end_date">End Date</option>
+    <option value="score">Score</option>
+    <option value="members">Popularity</option>
+  </select>
+	
+	<!-- Create a limit selection -->
+	<select id="limit">
+		<option value="5">5</option>
+		<option value="10">10</option>
+		<option value="15">15</option>
+		<option value="20">20</option>
+		<option value="25">25</option>
+	  </select>
+  
+</div>
+
+<!-- Search term input -->
+<div id="searchFiller">
+  <div class="widgets">
+    <input id="searchterm" type="text" size="30" maxlength="20" autofocus placeholder="  Search" />
+  </div>
+  
+    <!-- Status and results display -->
+    <!-- <div id="status"></div> -->
+    <!-- <div id="content"></div> -->
+  
+      <!-- Search button -->
+    <div class="widgets">
+      <button type="button" id="search" class="green">Tap to Search</button>
+    </div>
+</div>
+
+<div id="status">Ready to Search!</div>
+
+	<h2>Results</h2>
+  <div id="displayResult"></div>
+
+	<div id="content">
+		<p>No data yet!</p>
+    <div id="details"></div>
+    
+	</div>
+
+	<!-- Pagination buttons -->
+  <div class="widgets">
+    <button type="button" id="prev" class="red">Previous</button>
+    <button type="button" id="next" class="red">Next</button>
+  </div>
+</html>
+
+
+  <!--Jikan reference for edit for fast work. -->
+  <!--Due to to many request, I remove the genre -->
+    <!-- Create genre selection -->
+   <!-- <select id="genre">
+      <option value="">Any Genre</option>
+      <option value="1">Action</option>
+        <option value="2">Adventure</option>
+        <option value="3">Cars</option>
+        <option value="4">Comedy</option>
+        <option value="5">Avante Garde</option>
+        <option value="6">Demons</option>
+        <option value="7">Mystery</option>
+        <option value="8">Drama</option>
+        <option value="10">Fantasy</option>
+        <option value="11">Game</option>
+        <option value="13">Historical</option>
+        <option value="14">Horror</option>
+        <option value="15">Kids</option>
+      </select> -->

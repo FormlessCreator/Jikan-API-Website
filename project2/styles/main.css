@@ -1,0 +1,418 @@
+/* * {
+    font-family: verdana, tahoma, sans-serif;
+}
+
+header 
+{
+    height: 300px;
+}
+
+header h1 
+{
+    margin: 0;
+    color: rgb(255, 111, 111);
+    text-align: center;
+    justify-content: center;
+    font-size: 100px;
+    padding-top: 35px;
+    text-shadow: 
+        8px 2px 0 white,   
+        -2px -2px 0 white, 
+        2px -2px 0 white,  
+        -2px 2px 0 white;
+}
+
+body 
+{
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 10px;
+    background-color: #e0f7fa;
+}
+
+header 
+{
+    background-image: url('images/cats.jpg');
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    background-color: rgb(159, 159, 159);
+    padding: 50px;
+}
+
+.widgets 
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#content 
+{
+    text-align: center;
+}
+
+
+#status 
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style:normal;
+    font-stretch: extra-expanded;
+    height: 32px;
+}
+
+.result {
+    position: relative;
+    height: 175px;
+    width: 100px;
+    float: left;
+    border: 1px solid gray;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.result img {
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    left: 4px;
+    bottom: 5px;
+    display: block;
+}
+
+.result span {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+.result audio {
+    width: 130px;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 10px 18px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.6);
+    font-size: 9.5pt;
+    font-weight: bold;
+    border: 1px solid black;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4);
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease-in-out;
+}
+
+button.green {
+    border-color: rgb(255, 111, 111);
+    background: linear-gradient(to bottom, rgb(255, 111, 111) 0%, rgb(200, 40, 40) 100%); 
+}
+
+button:hover {
+    background: rgb(255, 140, 140);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+    background: rgb(255, 180, 180); 
+    box-shadow: 0 0 6px rgba(0,0,0,.6);
+}
+
+button:focus { outline: 0; }
+
+.widgets {
+    margin-top: 1em;
+    margin-bottom: 1em;
+} */
+
+/* ------------------------------------------------------------------------------- */
+/* New code: */
+
+
+* 
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Cinzel", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+body 
+{
+	background-color: #edb0b0;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+    width: 100%;
+    height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+header 
+{
+	background: linear-gradient(45deg, #ff6f61, #dd7898);
+	width: 100%;
+	text-align: center;
+	padding: 1em 0;
+	font-size: 2em;
+	color: #fff;
+}
+
+header h1
+{
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#menu
+{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    max-width: 1000px;
+}
+
+
+#menu select
+{
+    padding: 30px;
+    font-size: 1.1rem;
+    background: linear-gradient(45deg, #ff978e, #d65780);
+    color: #fff;
+    border: solid 1px white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 150px;
+    height: 40px;
+}
+
+#searchFiller
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    justify-self: unset;
+}
+  
+#searchFiller .widgets input
+{
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: large;
+}
+
+#searchFiller .widgets button
+{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    font-size: larger;
+    font-weight:bolder;
+    border-radius: 20px;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(180deg, #ff978e, #a7a7a7);
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: -5px;
+}
+
+#content 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;  
+    margin: 20px;
+}
+
+.result
+{
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden; 
+    border: 8px solid white;
+    position: relative;
+    cursor: pointer;
+}
+
+.result .card-img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.details
+{
+    width: 100%;
+    height:100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    overflow: scroll;
+    background: rgba(255, 177, 177, 0.438);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    left: -100%;
+    transition: 0.2s;
+}
+
+.card-title
+{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 200;
+    color: rgb(0, 0, 0);
+    background-color: #f1f1f1;
+    border: solid;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.card-detail strong,
+.card-status strong,
+.card-rating strong,
+.card-ranking strong,
+.card-episodes strong,
+.card-type strong,
+.card-gerne strong 
+{
+  font-weight: bold;
+  color: #ffe9a6; 
+}
+
+.card-detail
+{
+  background-color: rgba(0, 0, 0, 0.861);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 10px 0;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.card-status 
+{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card-rating 
+{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card-ranking 
+{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card-episodes 
+{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card-type 
+{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card-gerne 
+{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.result:hover .details
+{
+    left: 0;
+}
+
+
+.widgets 
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+  
+.widgets button
+{
+    margin: 20px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: white;
+    background-color: #ffa5a5;
+    border: 1px solid white;
+}
+  
+
+.widgets .red 
+{
+    background: linear-gradient(180deg, #ff978e, #a7a7a7);
+}
+  
+.widgets .red:hover 
+{
+    background-color: #c50000;
+    transform: scale(1.1);
+}
+  
+
+.widgets button:focus 
+{
+    outline: 2px solid #ffbf00; 
+}
+
+#searchFiller .widgets button:hover
+{
+    transform: scale(1.2);
+    background: linear-gradient(180deg, #6e6e6e, #fe796d);
+}
+  
